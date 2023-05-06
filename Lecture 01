@@ -128,9 +128,27 @@ for( auto vctr: vec)
     cout<< it <<" ";    // here we are running a for each loop, thus we don't need to de-reference it
                         // we would have had to use *it in case of a simple for loop
   }
+  cout<<endl;
 }
                                                   
-                                                  
+
+// use these for each loops using iterators over traditional loops for CP because these have fewer lines of code
+
+
+// how to define a 10x20 2-D vector
+vector<vector<int>> vec(10, vector<int> arr(20, 0));
+Here we are first declaring a vector vec and then specifying the initial size of the vector as 10.
+Then we are initialising vec with integer vectors, each of size 20 and all elements initialised to zero.
+
+
+
+int arr[4];   --> declares an array
+Similarly,
+vector<int> arr[4];   --> declares an array of 4 vectors
+
+
+// to define a 3-D vector 10x20x30
+vector<vector<vector<int>>> vec(10, vector<vector<int>> in_vec(20, vector<int> arr(30. 0) ));
                                                   
                                                   
                                                   
