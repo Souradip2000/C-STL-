@@ -34,3 +34,15 @@ for(auto it: arr.begin(); it != arr.end(); it++)
 }
 
 auto it --> it is a pointer - auto automatically takes the data type of the element that is present at the begin() location
+
+
+// For each loop
+
+string s="zxhfsdajf";
+for(auto ch: s)
+  cout<<ch<<" ";
+  
+This iterates the loop from the begining till the end
+
+front() - gives access to the first element of the array
+back() - gives access to the last element of the array
