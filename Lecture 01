@@ -108,3 +108,35 @@ vector<int> arr(vec1.begin(), vec1.begin()+2);    // copies only till the second
                                                   // for an array {1,2,3,4,5}.  vec1.begin() points at 1 and vec1.begin+2 points to 3
                                                   // but 3 will not be included 
                                                   // thus only 1 and 2 is copied
+         
+ 
+
+
+
+
+
+
+
+
+
+2-D Vectors
+
+for( auto vctr: vec)
+{
+  for(auto it: vctr)
+  {
+    cout<< it <<" ";    // here we are running a for each loop, thus we don't need to de-reference it
+                        // we would have had to use *it in case of a simple for loop
+  }
+}
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
