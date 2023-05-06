@@ -80,3 +80,10 @@ ________________________________________________________________________________
 
 
 Vectors
+
+Size of a vector is doubled when its capacity is full as it gives a better time complexity to copy all the elements into the new array with double the size than it was initially.
+
+Same rules for declaring arrays of maximum sizes apply for vectors too, while declaring inside int main() and globally.
+
+If we're pushing back more than 10^6 times to a vector array of integers that has been declared inside int main(), the we will have the following error:
+*Segmentation fault*    -->     this error happens when we try to access an array position that cannot be defined
