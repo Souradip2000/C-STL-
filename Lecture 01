@@ -1,0 +1,10 @@
+// Array containers
+
+Declaring an array in the global space will automatically initialise all the elements of the array with zero.
+Declaring an array inside int main(), the elements of the array will have garbage values.
+
+.at(index)    --> gives access to the element at the specified index of the array
+
+.fill(number)   --> initialises all the elements of the array with the number
+
+array<int,4> arr={3};   --> here only the first element is initialised to 3 and the rest of the elements are initialised to 0
