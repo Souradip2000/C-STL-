@@ -10,6 +10,9 @@ Declaring an array inside int main(), the elements of the array will have garbag
 array<int,4> arr={3};   --> here only the first element is initialised to 3 and the rest of the elements are initialised to 0
 
 
+
+
+
 // Iterators
 
 .begin()  --> points to the first element
@@ -19,6 +22,8 @@ array<int,4> arr={3};   --> here only the first element is initialised to 3 and 
 .rbegin() --> points to the last element
 
 .rend() --> points to the address before the first element
+
+for reverse iterator, write ++ only in the increment condition of for loop. It will start from the end element and traverse the array backwards only.
 
 // Code:
 
