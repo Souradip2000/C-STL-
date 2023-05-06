@@ -1,2 +1,2 @@
 # C++ STL:
-Notes of the tutorial of C++ STL by Raj Vikramaditaya
+Notes of the C++ STL Tutorial by Raj Vikramaditaya
