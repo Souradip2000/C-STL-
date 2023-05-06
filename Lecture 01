@@ -93,10 +93,11 @@ If we're pushing back more than 10^6 times to a vector array of integers that ha
 
 Mehtods:
 
-vec.push_back()
+vec.push_back()   /   vec.emplace_back(element)   --> slightly faster than push_back() -- used in CP
 vec.pop_back()
 vec.size()
 vec.capacity()
+vec.emplace(position, element). --> position must be specified with the help of an iterator
 
 
 // to copy a vector in another 
