@@ -46,3 +46,37 @@ This iterates the loop from the begining till the end
 
 front() - gives access to the first element of the array
 back() - gives access to the last element of the array
+
+
+
+
+____________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+We can declare an array of int/char/double data type of maximum size 10^6 within int main().
+This becomes 10^7 when declared globally.
+
+We can declare an array of boolean data type of maximum 10^7 elements inside int main().
+This becomes 10^8 when we declare it globally.
+
+
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+Vectors
