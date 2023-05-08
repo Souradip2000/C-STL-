@@ -149,6 +149,14 @@ vector<int> arr[4];   --> declares an array of 4 vectors
 
 // to define a 3-D vector 10x20x30
 vector<vector<vector<int>>> vec(10, vector<vector<int>> in_vec(20, vector<int> arr(30. 0) ));
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________
                                                   
                                                   
                                                   
