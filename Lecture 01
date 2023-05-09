@@ -1,4 +1,4 @@
-// Array containers
+// Array containers -
 
 Declaring an array in the global space will automatically initialise all the elements of the array with zero.
 Declaring an array inside int main(), the elements of the array will have garbage values.
