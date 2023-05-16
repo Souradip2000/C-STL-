@@ -51,6 +51,24 @@ for(int i=0; i<n; i++)
 
 
 
+
+We cna initialse set with any data type, including struct.
+
+for(auto it=st.begin(); it!=st.end(); it++)
+{
+  cout<<*it<<" ";
+}
+
+for(auto it: st)
+{
+  cout<<it<<" ";
+}
+
+
+// To delete an entire set
+st.erase(st.begin(), st.end());
+
+
 Summary :-
 
 Mehtods:
@@ -59,6 +77,8 @@ Mehtods:
   iii.  erase()
   iv.   find()
   v.    size()
+  
+All operations on set have log(n) time complexity, which is pretty good.
   
   
   
@@ -72,5 +92,27 @@ ________________________________________________________________________________
 
 
 
+Unordered Set:
 
+
+
+
+unordered_set<int> st;
+
+Here the avg case time complexity is O(1)
+But the avg case time complexity is O(n).
+
+We should use unordered_set whenever we don't need to store the elements in ascending order because it has a better avg case time complextiy.
+But if the problem will give TLE using unordered_set, then we need to switch to set.
+TLE indicates the worst case of unordered_set is occurring, which is very rare.
+
+All the methods are the same as in set.
+
+
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
 
