@@ -9,7 +9,21 @@ ________________________________________________________________________________
 
 Stores only unique elements in ascending order
 Cannot directly acces elements as in an arr[index_to_be_accessed]
-Use 
+Use iterators to access elements of the set
+
+insert() can be replaced with emplace().
+
+st.size() gives size of the set.
+
+3 types of erase functions: 
+  i. st.erase(iterator);
+  ii. st.erase( starting iterator, ending iterator )      // [)
+  iii. st.erase( key );     --> key: the element you want to delete from the set
+  
+ erase() -  time complexity: O(log n)
+ 
+ find( element ) -  returns an iterator to the element 
+                    if element is not present, the find function returns st.end()
 
 Code:
 
@@ -25,4 +39,38 @@ for(int i=0; i<n; i++)
                       This insert function uses O(log n) time complexity
                       
   *st.begin()+2   --> access elements in a set using iterators
+  
+  
+  st.erase(st.begin(),st.begin()+2);    --> syntax: st.erase(iterator)  --> removes the elements    // [ starting itr, ending itr )
+  st.erase(4);  // 4 element will be deleted from the set
+  
+  auto it = st.find(7);
 }
+
+
+
+
+
+Summary :-
+
+Mehtods:
+  i.    insert() / emplace()
+  ii.   iterators: begin(), end(), rbegin(), rend()
+  iii.  erase()
+  iv.   find()
+  v.    size()
+  
+  
+  
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
