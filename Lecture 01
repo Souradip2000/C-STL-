@@ -1,3 +1,34 @@
+// Struct
+struct Raj
+{
+  string name;
+  int roll_no;
+  int age;
+  char gender;
+}
+
+int main()
+{
+  Raj *obj1 = new Raj("Souradip", 34, 21, 'M');
+  Raj obj2 = Raj("Souradip", 34, 21, 'M');
+  
+  // not adviced to use the below method to declare objects of structures
+  Raj obj3;
+  obj3.name("Souradip");
+  obj3.roll_no(32);
+}
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________
+
+
+
 // Array containers -
 
 Declaring an array in the global space will automatically initialise all the elements of the array with zero.
