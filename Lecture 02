@@ -1,1 +1,28 @@
-Lec 01 contd...
+Date : 16th May, 2023
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+// Set
+
+Stores only unique elements in ascending order
+Cannot directly acces elements as in an arr[index_to_be_accessed]
+Use 
+
+Code:
+
+set<int> st;
+int n;
+cin>>n;
+for(int i=0; i<n; i++)
+{
+  int x;
+  cin>>x;
+  
+  st.insert(x);   --> insert function is used to insert an element into the set
+                      This insert function uses O(log n) time complexity
+                      
+  *st.begin()+2   --> access elements in a set using iterators
+}
