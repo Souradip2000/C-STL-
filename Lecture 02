@@ -52,7 +52,7 @@ for(int i=0; i<n; i++)
 
 
 
-We cna initialse set with any data type, including struct.
+We can initialse set with any data type, including struct.
 
 for(auto it=st.begin(); it!=st.end(); it++)
 {
