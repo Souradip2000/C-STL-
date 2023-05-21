@@ -9,6 +9,13 @@ struct Raj
 
 int main()
 {
+  // not advised to use this method
+  
+  struct Raj obj;
+  obj.roll_no=21;
+  cout<<obj.roll_no;
+ 
+// not sure of the below formats
   Raj *obj1 = new Raj("Souradip", 34, 21, 'M');
   Raj obj2 = Raj("Souradip", 34, 21, 'M');
   
