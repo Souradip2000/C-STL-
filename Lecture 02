@@ -143,8 +143,35 @@ Methods:
   ms.erase(ms.find(2));
   ms.erase(ms.find(2), ms.find(2)+2)    --> will erase the next two instances of 2
   
+ Time complexity : O(log n)
+  
   
   
 __________________________________________________________________________________________________________________________________________________________
   
+  
+  
+  
+  
+  
+Map:
+ 
+ 
+ Stores key value pairs.
+ Always sorted in linearly increasing order according to the keys.
+ 
+ map<string, int> mpp;
+ mpp["raj"]=43;
+ mpp["sandeep"]=34;
+ mpp["hima"]=86;
+ mpp["raj"]=12;
+ 
+ raj key will now store 12 as its value
+ 
+ Map always stores unique keys. Thus when the same key occurs, the value stored in the key gets overwritten.
+ 
+ mpp.emplace("raj", 45);    --> overwrites in the same manner
+ mpp.erase(mpp.find("raj"));  
+ mpp.erase(mpp.begin());    --> erases the first element
+ 
   
