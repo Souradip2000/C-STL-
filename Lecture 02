@@ -2,7 +2,7 @@ Date : 16th May, 2023
 ___________________________________________________________________________________________________________________________________________________________
 
 
-
+Set is implemented in c++ using binary search tree(BST).
 
 
 // Set
@@ -116,3 +116,35 @@ All the methods are the same as in set.
 
 __________________________________________________________________________________________________________________________________________________________
 
+Date : 21st May, 2023
+________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+Multiset:
+
+
+
+It allows us to store the same elements.
+Elements are stored in ascending order.
+
+Methods:
+
+  insert() / emplace()
+  find()  -   returns the iterator to the first elemnt matching if there are multiple similar elements
+  erase(element) -   will remove all occurrences of the element
+  clear() -   clears the entire set
+  
+  
+  // to erase multiple instances, we can use:
+  ms.erase(ms.find(2));
+  ms.erase(ms.find(2), ms.find(2)+2)    --> will erase the next two instances of 2
+  
+  
+  
+__________________________________________________________________________________________________________________________________________________________
+  
+  
