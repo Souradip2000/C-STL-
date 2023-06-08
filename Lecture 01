@@ -74,7 +74,7 @@ for(auto it: arr.begin(); it != arr.end(); it++)
 auto it --> it is a pointer - auto automatically takes the data type of the element that is present at the begin() location
 
 
-// For each loop
+// For-each loop
 
 string s="zxhfsdajf";
 for(auto ch: s)
