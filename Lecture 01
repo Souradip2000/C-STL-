@@ -191,7 +191,7 @@ for( auto vctr: vec)
 
 
 // how to define a 10x20 2-D vector
-vector<vector<int>> vec(10, vector<int> arr(20, 0));
+vector<vector<int>> vec(10, vector<int> (20, 0));
 Here we are first declaring a vector vec and then specifying the initial size of the vector as 10.
 Then we are initialising vec with integer vectors, each of size 20 and all elements initialised to zero.
 
