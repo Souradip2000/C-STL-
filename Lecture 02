@@ -159,6 +159,9 @@ Map:
  
  Stores key value pairs.
  Always sorted in linearly increasing order according to the keys.
+
+ Keys are always unique in maps.
+ However the same value can be assigned to multiple keys.
  
  map<string, int> mpp;
  mpp["raj"]=43;
@@ -173,5 +176,10 @@ Map:
  mpp.emplace("raj", 45);    --> overwrites in the same manner
  mpp.erase(mpp.find("raj"));  
  mpp.erase(mpp.begin());    --> erases the first element
+ mpp.erase("raj");          --> finds the key and erases the key value pair
+ mpp.clear();               --> cleans up the entire map
+ mpp.erase(mpp.begin(),mpp.begin()+2);    --> clears a specific range
+ auto it= mpp.find("raj");   --> points to where raj lies
+ mpp.empty();                --> returns a boolean value whether map is empty or not
  
   
