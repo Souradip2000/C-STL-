@@ -225,6 +225,9 @@ Avg case : O(1)
 Worst case : O(n)    --> n is the size of the container
 
 
+We cannot use pair data type as key of a map. It is not allowed.
+
+
 __________________________________________________________________________________________________________________________________________________________
 
 
@@ -243,3 +246,64 @@ cout<<pr.first.second;    --> 2
 
 
 
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+Multimap: 
+
+
+
+Syntax: multimap<int, int> mp;
+
+All the keys are stored in sorted order.
+This just can store multiple same keys.
+
+mp.emplace("raj", 5);
+mp.emplace("raj", 6);        --> then the value of raj is not overwritten here. Instead both the values get stored.
+
+// the values with the same keys are stored in the order they are added. The pairs are not stored in sorted fashion on the basis of the values.
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+Stacks:
+
+Syntax: stack<int> st;
+LIFO
+(implemented using arrays or LL)
+
+Mehtods: 
+  1. st.push(element)  or  st.emplace(element)
+  2. st.pop()
+  3. st.top()
+  4. st.size()
+  5. st.empty()
+
+
+To delete the entire stack: 
+
+while(!st.empty()){
+  st.pop();
+}
+
+
+if we call st.top() function on empty stack, it will give us a Runtime error
+
+while(!st.empty()){      --> this checking before calling the function will help avoid errors.
+  cout<<st.top();
+}
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
