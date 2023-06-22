@@ -307,3 +307,44 @@ while(!st.empty()){      --> this checking before calling the function will help
 
 
 __________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+Queue: 
+
+Syntax: queue<int> q={1,2,3,4,5};
+                OR
+        queue<int> q;
+        q.push(1);
+        q.push(5);
+        q.push(3);
+FIFO
+
+Methods:
+  1.push()
+  2.pop()
+  3.front()
+  4.size()
+  5.empty()
+
+
+All the methdos take O(1) i.e. constant time complexity.
+Except deleting all the elements of a queue. It takes O(n) time complexity.
+
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+Priority queue:
+
+Syntax: 
