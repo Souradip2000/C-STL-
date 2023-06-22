@@ -160,6 +160,9 @@ Map:
  Stores key value pairs.
  Always sorted in linearly increasing order according to the keys.
 
+
+ Time complexity: O( log n )     -->for all methods of map
+
  Keys are always unique in maps.
  However the same value can be assigned to multiple keys.
  
@@ -181,5 +184,25 @@ Map:
  mpp.erase(mpp.begin(),mpp.begin()+2);    --> clears a specific range
  auto it= mpp.find("raj");   --> points to where raj lies
  mpp.empty();                --> returns a boolean value whether map is empty or not
+ mpp.find(key);              --> points to the end if key dosen't exist
+
+
+// Printing a map
+
+Because maps are stored in form of key-value pairs, they are printed in the form of pairs.
+
+pair<int, int> pr;
+pr.first = 1;
+pr.second = 10;
+
+In the case of maps, they are:     pair<string, int> pr;
+
+for(auto it: mpp){
+  cout<<it.first<<" "<<it.second;
+}
+
+for(auto it=mpp.begin(); it!=mpp.end(); i++){          // to access pairs using iterators
+  cout<< it->first <<" "<< it->second;
+}
  
   
