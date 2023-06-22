@@ -205,4 +205,41 @@ for(auto it=mpp.begin(); it!=mpp.end(); i++){          // to access pairs using 
   cout<< it->first <<" "<< it->second;
 }
  
-  
+
+__________________________________________________________________________________________________________________________________________________________
+
+Thursday 22 June, 2023
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+Unordered Map:
+
+Syntax:  unordered_map<string, int> mpp;
+
+Pairs won't be stored in order.
+All the functions will be the same.
+
+Time complexity:
+Avg case : O(1)
+Worst case : O(n)    --> n is the size of the container
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+Pair Class:
+
+
+pair<int, int> pr= {1,2};
+cout << pr.first;    --> 1
+
+pair<pair<int, int>, int> pr= {{1,2}, 3};
+cout<<pr.first.second;    --> 2
+
+
+
+
