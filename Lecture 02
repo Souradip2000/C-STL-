@@ -341,10 +341,25 @@ Except deleting all the elements of a queue. It takes O(n) time complexity.
 __________________________________________________________________________________________________________________________________________________________
 
 
+There's no iterator concept in stacks and queues.
+
+__________________________________________________________________________________________________________________________________________________________
 
 
 
 
 Priority queue:
 
-Syntax: 
+Syntax: priority_queue<int> pq;
+
+stores all elements in sorted order and does the operations in O(log n) time complexity.
+Unordered set used to have the worst case time complexity of O(n). It helps deal with the problem.
+
+Methods:
+  1. push()
+  2. pop()
+  3. top()
+  4. size()
+  5. empty()
+
+It stores the elements in descending order.
