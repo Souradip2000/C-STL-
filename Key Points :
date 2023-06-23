@@ -1,0 +1,5 @@
+If unordered_map<int, int> gives TLE, then switch to map<int, int> and vice versa.
+unordered_map average case time complexity is O(1) while the worst case is O(n).
+map time complexity for avg case is O( log n ).
+
+It is similar in the case of sets and unordered sets.
