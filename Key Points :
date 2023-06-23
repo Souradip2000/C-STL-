@@ -3,3 +3,9 @@ unordered_map average case time complexity is O(1) while the worst case is O(n).
 map time complexity for avg case is O( log n ).
 
 It is similar in the case of sets and unordered sets.
+
+
+
+
+begin(), end(), etc. will always return an iterator.
+using *arr.begin() will return the element. [ check lec01 notes ].
