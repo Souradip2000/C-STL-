@@ -363,3 +363,23 @@ Methods:
   5. empty()
 
 It stores the elements in descending order.
+Uses the concept of heap sort. (Heapify)
+
+Can be implemented using a binary search tree. ( also using arrays, linked list and heap data structure ).
+
+The largest element is at the top of the binary search tree.
+The smaller element goes to the left node and the larger element goes to the right node.
+Both the sub-trees of the root node are also BSTs. i.e. they follow the above two properties.
+
+
+priority_queue<pair<int, int>> pq;
+pq.push(1,4);
+pq.push(1,6);
+pq.push(1,5);                  // the elements will be stored in the fashion (1,6), (1,5), (1,4).
+                               // if the first elements in a pair are equal, it will go to check the order in the second element
+
+
+
+Set - stores elements in sorted manner but can only store unique elements : time complexity: O(log n)
+unordered_set - stores unique elements in unordered manner : time complexity : O(1) but worst case is O(n)
+priority_queue - stores all in sorted order : time complexity : O(log n)
