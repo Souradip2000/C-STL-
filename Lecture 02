@@ -454,3 +454,14 @@ It has the following operations:
 		9. remove(element)			--> this function has time complexity: O(1)
 
 We usually use lists when we need all types of operations.
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
