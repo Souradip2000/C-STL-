@@ -6,7 +6,7 @@ Set is implemented in c++ using binary search tree(BST).
 
 
 // Set
-
+					
 Stores only unique elements in ascending order
 Cannot directly acces elements as in an arr[index_to_be_accessed]
 Use iterators to access elements of the set
@@ -380,6 +380,75 @@ pq.push(1,5);                  // the elements will be stored in the fashion (1,
 
 
 
+// to store elements in ascending order ( minimum priority queue )
+pq.push(-5);
+pq.push(-6);
+pq.push(-1);
+Here elements will be stored in the order -1, -5, -6.
+While printing : cout<<-1*pq.top()<<" "; will print the elements in ascending order.
+
+
+Minimum priority queue:
+Syntax: 			priority_queue<T, vector<T>, greater<T>> pq;					// T is the template data type - it can be anything
+							priority_queue<int, vector<int>, greater<int>> pq;		// after using this we won't have to multiply by -1
+						  This will store the elements in ascending order.
+
+
+
 Set - stores elements in sorted manner but can only store unique elements : time complexity: O(log n)
 unordered_set - stores unique elements in unordered manner : time complexity : O(1) but worst case is O(n)
-priority_queue - stores all in sorted order : time complexity : O(log n)
+priority_queue - allows duplicates and stores all in sorted order : time complexity : O(log n)
+
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+Dequeue:
+
+	It is a doubly ended queue.
+
+It has the following operations:
+		1. push_back()
+		2. push_front()
+		3. pop_back()
+		4. pop_front()
+		5. iterators : begin(), end(), rbegin(), rend()
+		6. size()
+		7. clear()
+		8. empty()
+
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+List:
+
+list<int> ls;
+
+Implemented using a doubly linked list.
+
+It has the following operations:
+		1. push_back()
+		2. push_front()
+		3. pop_back()
+		4. pop_front()
+		5. iterators : begin(), end(), rbegin(), rend()
+		6. size()
+		7. clear()
+		8. empty()
+		9. remove(element)			--> this function has time complexity: O(1)
